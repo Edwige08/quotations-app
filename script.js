@@ -27,8 +27,16 @@ const addQuote = (quote, author) => {
 
 // EVENT LISTENERS :
 validQuotationButton.addEventListener('click', () => {
-    event.preventDefault();
-    addQuote(text.value, author.value);
+    event.preventDefault();     // pour que la page ne se recharge pas quand on clique "Valider"
+    if (text.value === "") {
+        text.focus();
+    } else if (author.value === "") {
+        author.focus();
+    } else {
+        addQuote(text.value, author.value);
+        text.value = "";            // vide le champs citation
+        author.value = "";          // vide le champs auteurice
+    }
 })
 
 
