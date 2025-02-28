@@ -1,0 +1,54 @@
+:root {
+    --main:#626F47;
+    --firstColor:#A4B465;
+    --secondColor:#FFCF50;
+    --thirdColor:#FEFAE0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--main);
+}
+#title {
+    width: 80%;
+    background-color: #FFCF50;
+    border-radius: 10px;
+    height: fit-content;
+    margin: 0 auto;
+}
+h1 {
+    text-align: center;
+    font-family: "Playwrite IT Moderna", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 7vw;
+    padding: 10px;
+    display: block;
+}
+h2 {
+    text-align: center;
+    font-weight: lighter;
+    font-size: 3.5vw;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+}
+.italic {
+    font-style: italic;
+}
+input {
+    width: 100%;
+    margin-left: auto;
+}
+
+#quotation-form {
+    border: solid 3px black;
+    padding: 20px;
+    text-align: right;
+    width: 60%;;
+    margin-left: auto;}
+.quote {
+    border-left: solid 5px var(--secondColor);
+    padding: 1px 10px;
+    margin: 10px;
+}
